@@ -9,8 +9,8 @@ import {
 export function FAQ() {
   return (
     <div className="max-w-screen-2xl mx-auto">
-      <h2 className="mb-2 text-3xl font-bold md:text-5xl text-center">
-        Let's build something exciting together!
+      <h2 className="mb-2 p-4 text-primary text-3xl font-bold md:text-5xl text-center">
+        F.A.Q
       </h2>
       <Accordion
         type="single"

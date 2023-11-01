@@ -39,12 +39,13 @@ export function MyMenu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 ">
+            <ul className="grid gap-3 p-4">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
                   href={component.href}
+                  className="hover:bg-primary hover:text-white"
                 ></ListItem>
               ))}
             </ul>

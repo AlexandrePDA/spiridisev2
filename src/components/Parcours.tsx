@@ -5,12 +5,12 @@ export function Parcours() {
   return (
     <section id="parcours">
       <div className="mx-auto w-full max-w-3xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
-        <h2 className="mb-8 text-center text-3xl font-bold md:mb-12 md:text-5xl lg:mb-16">
+        <h2 className="mb-8 text-center text-primary text-3xl font-bold md:mb-12 md:text-5xl lg:mb-16">
           Get Started In 4 Easy Steps
         </h2>
 
         <div className="mx-auto grid max-w-2xl gap-6">
-          <div className="flex items-center justify-center gap-6 rounded-[60px] bg-[#f2f2f7] px-6 py-4 transition md:hover:bg-black md:hover:text-white">
+          <div className="flex items-center justify-center gap-6 rounded:md md:rounded-[60px]  px-6 py-4 transition md:hover:bg-muted-foreground dark:hover:bg-primary md:hover:text-white">
             <div className="md:flex h-20 w-20 flex-none items-center justify-center rounded-full hidden">
               <Speech size={40} />
             </div>
@@ -24,7 +24,7 @@ export function Parcours() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-6 rounded-[60px] bg-[#f2f2f7] px-6 py-4 transition md:hover:bg-black md:hover:text-white">
+          <div className="flex items-center justify-center gap-6 rounded:md md:rounded-[60px]  px-6 py-4 transition md:hover:bg-muted-foreground dark:hover:bg-primary md:hover:text-white">
             <div className="md:flex h-20 w-20 flex-none items-center justify-center rounded-full hidden">
               <Search size={40} />
             </div>
@@ -37,7 +37,7 @@ export function Parcours() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-6 rounded-[60px] bg-[#f2f2f7] px-6 py-4 transition md:hover:bg-black md:hover:text-white">
+          <div className="flex items-center justify-center gap-6 rounded:md md:rounded-[60px]  px-6 py-4 transition md:hover:bg-muted-foreground dark:hover:bg-primary md:hover:text-white">
             <div className="md:flex h-20 w-20 flex-none items-center justify-center rounded-full hidden">
               <Pencil size={40} />
             </div>
@@ -49,7 +49,7 @@ export function Parcours() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-6 rounded-[60px] bg-[#f2f2f7] px-6 py-4 transition md:hover:bg-black md:hover:text-white">
+          <div className="flex items-center justify-center gap-6 rounded:md md:rounded-[60px]  px-6 py-4 transition md:hover:bg-muted-foreground dark:hover:bg-primary md:hover:text-white">
             <div className="md:flex h-20 w-20 flex-none items-center justify-center rounded-full  hidden">
               <PartyPopper size={40} />
             </div>
@@ -62,7 +62,7 @@ export function Parcours() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-6 rounded-[60px] bg-[#f2f2f7] px-6 py-4 transition md:hover:bg-black md:hover:text-white">
+          <div className="flex items-center justify-center gap-6 rounded:md md:rounded-[60px]  px-6 py-4 transition md:hover:bg-muted-foreground dark:hover:bg-primary md:hover:text-white">
             <div className="md:flex h-20 w-20 flex-none items-center justify-center rounded-full hidden">
               <PackagePlus size={40} />
             </div>

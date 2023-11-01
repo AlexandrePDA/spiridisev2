@@ -10,18 +10,18 @@ export function Hero() {
           <h1 className="mb-4 text-4xl font-bold md:text-6xl">
             Écrivons maintenant les mots de demain
           </h1>
-          <p className="mb-6 text-sm text-[#636262] sm:text-xl lg:mb-8">
+          <p className="mb-6 text-sm text-muted-foreground sm:text-xl lg:mb-8">
             Bénéficiez d'une véritable expertise dans le domaine de la
             communication digitale. Spiridise vous accompagne dans le
             déploiement d'une stratégie éditoriale numérique, destinée à
             améliorer votre branding et à optimiser votre présence en ligne.
           </p>
           <div>
-            <Link className="mr-4" href="#">
-              <Button>Test</Button>
+            <Link className="mr-4" href="#solutions">
+              <Button className="bg-orange text-white">Découvrir</Button>
             </Link>
-            <Link href="#">
-              <Button>Test</Button>
+            <Link href="#contact">
+              <Button className="bg-orange text-white">Contact</Button>
             </Link>
           </div>
         </div>
