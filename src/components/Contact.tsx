@@ -51,9 +51,8 @@ export function Contact() {
                   placeholder=""
                   name="field"
                   className="mb-2.5 block h-auto min-h-[128px] w-full rounded-md border border-solid border-black p-3 text-sm text-[#333333]"
-                >
-                  {" "}
-                </textarea>
+                  defaultValue=" "
+                ></textarea>
               </div>
               <input
                 type="submit"
