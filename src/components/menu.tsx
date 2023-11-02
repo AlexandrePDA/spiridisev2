@@ -15,6 +15,10 @@ import {
 
 const components: { title: string; href: string }[] = [
   {
+    title: "Accueil",
+    href: "/",
+  },
+  {
     title: "Solutions",
     href: "#solutions",
   },

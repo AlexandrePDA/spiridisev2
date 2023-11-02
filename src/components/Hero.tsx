@@ -18,10 +18,14 @@ export function Hero() {
           </p>
           <div>
             <Link className="mr-4" href="#solutions">
-              <Button className="bg-orange text-white">Découvrir</Button>
+              <Button className="bg-orangespd hover:bg-orange-600 text-white">
+                Découvrir
+              </Button>
             </Link>
             <Link href="#contact">
-              <Button className="bg-orange text-white">Contact</Button>
+              <Button className="bg-orangespd hover:bg-orange-600 text-white">
+                Contact
+              </Button>
             </Link>
           </div>
         </div>

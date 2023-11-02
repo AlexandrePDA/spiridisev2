@@ -3,6 +3,8 @@
 import { Mail, Linkedin, ExternalLink, CalendarDays } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { Button } from "./ui/button";
 
 {
   /* gerer l'envois bloquer si les champs ne sont pas remplis */
@@ -10,6 +12,7 @@ import { useState } from "react";
 
 export function Contact() {
   const [Loading, setLoading] = useState<boolean>(false);
+  const [err, setErr] = useState<boolean>(false);
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
@@ -18,6 +21,12 @@ export function Contact() {
     const name: string = event.target[0].value;
     const email: string = event.target[1].value;
     const projectBrief: string = event.target[2].value;
+
+    if (name.length < 1 || email.length < 3 || projectBrief.length < 3) {
+      toast.error("Remplissez les champs !");
+      setLoading(false);
+      return setErr(true);
+    }
 
     // Création de l'objet à envoyer
     const payload = {
@@ -38,14 +47,24 @@ export function Contact() {
       if (response.ok) {
         console.log("Email envoyé avec succès:", data);
         setLoading(false);
+        setErr(false);
+        toast.success("Formulaire envoyé !");
       } else {
         console.error("Erreur lors de l'envoi de l'email:", data.error);
         setLoading(false);
+        setErr(true);
+        toast.error("Erreur");
       }
     } catch (error) {
       console.error("Erreur lors de l'envoi de la requête:", error);
       setLoading(false);
+      setErr(true);
+      toast.error("Erreur");
     }
+    setLoading(false);
+    event.target[0].value = "";
+    event.target[1].value = "";
+    event.target[2].value = "";
   };
 
   return (
@@ -121,19 +140,23 @@ export function Contact() {
               Lorem ipsum dolor sit amet consectetur adipiscing elit ut
               aliquam,purus sit amet luctus magna fringilla urna
             </p>
-
             <form
               onSubmit={handleSubmit}
               className="mx-auto mb-4 max-w-[400px] text-left"
               name="wf-form-password"
               method="post"
             >
+              {err && (
+                <p className="mb-4 text-muted-foreground">
+                  🚨 Erreur, Veuillez rééssayer...
+                </p>
+              )}
               <div>
                 <label
                   htmlFor="name"
                   className="mb-1 font-medium text-muted-foreground"
                 >
-                  Nom
+                  Nom *
                 </label>
                 <input
                   placeholder="John Doe"
@@ -148,7 +171,7 @@ export function Contact() {
                   htmlFor="email"
                   className="mb-1 font-medium text-muted-foreground"
                 >
-                  Email
+                  Email *
                 </label>
                 <input
                   id="email"
@@ -163,7 +186,7 @@ export function Contact() {
                   htmlFor="field"
                   className="mb-1 font-medium text-muted-foreground"
                 >
-                  Brief projet
+                  Brief projet *
                 </label>
                 <textarea
                   id="field"
@@ -173,16 +196,23 @@ export function Contact() {
                   defaultValue=" "
                 />
               </div>
-              <input
-                type="submit"
-                value="Envoyer"
-                className="inline-block w-full cursor-pointer rounded-md bg-primary px-6 py-3 text-center font-semibold text-white"
-                disabled={Loading}
-              />
+              {Loading ? (
+                <input
+                  value="⏳ Envoi en cours..."
+                  className="inline-block w-full cursor-pointer rounded-md bg-primary px-6 py-3 text-center font-semibold text-white"
+                />
+              ) : (
+                <input
+                  type="submit"
+                  value={"Envoyer"}
+                  className="inline-block w-full cursor-pointer rounded-md bg-primary px-6 py-3 text-center font-semibold text-white"
+                />
+              )}
             </form>
           </div>
         </div>
       </div>
+      <Toaster position="bottom-center" reverseOrder={false} />
     </section>
   );
 }

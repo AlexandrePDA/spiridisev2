@@ -37,13 +37,13 @@ export function About() {
       description:
         "I had the chance to work with Amel on a Cybersecurity documentation. Even though she was not familiar with the subject she managed to bring her perspective and her inputs were quite impressive. I cannot recommend enough to contract her with any type of work.",
       name: "Sid Bouziane - Chief Innovation Officier",
-      href: "https://www.linkedin.com/in/amel-addoun/details/recommendations/?detailScreenTabIndex=0",
+      href: "https://www.linkedin.com/in/amel-addoun/details/recommendations",
     },
     {
       description:
         "J'ai eu l'occasion de travailler avec Amel sur une mission de rédaction web. Très réactive et l'écoute, c'est une très bonne communiquante qui s'adapte parfaitement aux attentes de ses clients et collaborateurs. C'est un réel plaisir de pouvoir collaborer de nouveau avec elle à l'avenir et je la recommande",
       name: "Regis David Somé - Chargé SEO",
-      href: "https://www.linkedin.com/in/amel-addoun/details/recommendations/?detailScreenTabIndex=0",
+      href: "https://www.linkedin.com/in/amel-addoun/details/recommendations",
     },
   ];
 
@@ -66,7 +66,7 @@ export function About() {
       <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-10">
           <div className="flex flex-col gap-8 lg:w-3/5">
-            <h2 className="mb-8 text-3xl font-bold text-primary md:text-5xl">
+            <h2 className="mb-8 text-2xl font-bold text-primary md:text-5xl">
               Derrière Spiridise, l'envie de rendre accessible le pouvoir des
               mots bien choisis 🚀
             </h2>
