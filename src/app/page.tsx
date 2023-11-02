@@ -6,6 +6,7 @@ import { Solutions } from "@/components/Solutions";
 import { Stats } from "@/components/Stats";
 import { FAQ } from "@/components/FAQ";
 import { Collaborations } from "@/components/Collaborations";
+import { LastArticles } from "@/components/LastArticles";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Stats />
       <Parcours />
       <About />
+      <LastArticles />
       <Contact />
       <FAQ />
     </div>
