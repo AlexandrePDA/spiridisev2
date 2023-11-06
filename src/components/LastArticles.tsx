@@ -44,8 +44,8 @@ export function LastArticles() {
     <section>
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl text-primary font-bold mb-8 md:text-5xl">
-            Mes derniers articles ⚡️
+          <h2 className="text-3xl font-bold mb-12 md:text-5xl">
+            Mes <span className="text-primary">derniers</span> articles
           </h2>
 
           <div className="mb-12 grid gap-5 sm:grid-cols-2 md:grid-cols-3">

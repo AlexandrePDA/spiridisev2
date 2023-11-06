@@ -6,15 +6,20 @@ export function Hero() {
   return (
     <header>
       <div className="mx-auto w-full  px-5 py-16 md:px-10 md:py-24 lg:py-32">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="mb-4 text-4xl font-bold md:text-6xl">
-            Écrivons maintenant les mots de demain
-          </h1>
+        <div className="flex flex-col items-center mx-auto max-w-3xl text-center">
+          <div className="text-center">
+            <h1 className="mb-4 text-4xl font-extrabold md:text-6xl">
+              VOS IDÉES. NOS MOTS. <br />
+              <span className="bg-text-gradient  bg-clip-text text-transparent">
+                NOTRE HISTOIRE.
+              </span>
+            </h1>
+          </div>
           <p className="mb-6 text-sm text-muted-foreground sm:text-xl lg:mb-8">
-            Bénéficiez d'une véritable expertise dans le domaine de la
-            communication digitale. Spiridise vous accompagne dans le
-            déploiement d'une stratégie éditoriale numérique, destinée à
-            améliorer votre branding et à optimiser votre présence en ligne.
+            Expert de la communication digitale, Spiridise vous accompagne dans
+            le déploiement d’une stratégie éditoriale sur-mesure. Développez
+            votre image de marque, optimisez votre présence en ligne et faites
+            rayonner vos idées.
           </p>
           <div>
             <Link className="mr-4" href="#solutions">

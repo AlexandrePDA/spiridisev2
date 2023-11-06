@@ -18,6 +18,8 @@ module.exports = {
     extend: {
       colors: {
         orangespd: "#F76B15",
+        lightbluespd: "#95A5CF",
+        lightgrayspd: "#778299",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -52,6 +54,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: (theme) => ({
+        "text-gradient": "linear-gradient(to right, #2563EB, #F76B15, #2563EB)",
+      }),
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

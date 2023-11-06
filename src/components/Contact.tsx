@@ -69,77 +69,76 @@ export function Contact() {
 
   return (
     <section id="contact">
-      <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-        <div className="grid items-center gap-8 sm:gap-20 lg:grid-cols-2">
-          <div className="flex flex-col justify-between  max-w-3xl">
-            <h2 className="mb-2 text-3xl text-primary font-bold md:text-5xl">
-              Let's build something exciting together!
-            </h2>
-
-            {/* mini card contact */}
-            <div className=" flex items-center gap-4 mt-4 p-4 rounded-md ">
-              <Mail color="#F76B15" />
-              <div>
-                <h2 className=" text-base font-medium ">Pour se renseigner</h2>
-                <Link
-                  className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
-                  href="mailto:contact@spiridise.com"
-                >
-                  Envoyez un email
-                </Link>
+      <div className="mx-auto w-full max-w-4xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        <h2 className=" text-3xl text-center mb-12 font-bold md:text-5xl">
+          Notre histoire commence <span className="text-primary">ici</span>
+        </h2>
+        <div className="flex flex-col items-center  md:flex-row  gap-8 sm:gap-20 ">
+          <div className="  w-full md:w-1/2 h-full ">
+            <div className="flex flex-col justify-between  max-w-3xl">
+              {/* mini card contact */}
+              <div className="flex items-center gap-4  p-4 rounded-md ">
+                <Mail color="#F76B15" />
+                <div>
+                  <h2 className=" text-base font-medium ">
+                    Pour se renseigner
+                  </h2>
+                  <Link
+                    className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
+                    href="mailto:contact@spiridise.com"
+                  >
+                    Envoyez un email
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            <div className=" flex items-center gap-4 p-4 rounded-md  ">
-              <Linkedin color="#F76B15" />
-              <div>
-                <h2 className=" text-base font-medium ">
-                  Pour un premier contact
-                </h2>
-                <Link
-                  className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
-                  href="https://www.linkedin.com/in/amel-addoun-84a13519a"
-                >
-                  Rejoignez-moi sur Linkedin
-                </Link>
+              <div className=" flex items-center gap-4 p-4 rounded-md  ">
+                <Linkedin color="#F76B15" />
+                <div>
+                  <h2 className=" text-base font-medium ">
+                    Pour un premier contact
+                  </h2>
+                  <Link
+                    className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
+                    href="https://www.linkedin.com/in/amel-addoun-84a13519a"
+                  >
+                    Rejoignez-moi sur Linkedin
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            <div className=" flex items-center gap-4 p-4 rounded-md ">
-              <ExternalLink color="#F76B15" />
-              <div>
-                <h2 className=" text-base font-medium ">
-                  Pour débuter un projet
-                </h2>
-                <Link
-                  className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
-                  href="https://www.malt.fr/profile/ameladdoun"
-                >
-                  Échangeons sur Malt
-                </Link>
+              <div className=" flex items-center gap-4 p-4 rounded-md ">
+                <ExternalLink color="#F76B15" />
+                <div>
+                  <h2 className=" text-base font-medium ">
+                    Pour débuter un projet
+                  </h2>
+                  <Link
+                    className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
+                    href="https://www.malt.fr/profile/ameladdoun"
+                  >
+                    Échangeons sur Malt
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            <div className=" flex items-center gap-4 p-4 rounded-md  ">
-              <CalendarDays color="#F76B15" />
-              <div>
-                <h2 className=" text-base font-medium ">
-                  Pour prendre un rendez-vous
-                </h2>
-                <Link
-                  className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
-                  href="https://calendly.com/amel-addoun"
-                >
-                  Rencontrons-nous sur Calendly
-                </Link>
+              <div className=" flex items-center gap-4 p-4 rounded-md  ">
+                <CalendarDays color="#F76B15" />
+                <div>
+                  <h2 className=" text-base font-medium ">
+                    Pour prendre un rendez-vous
+                  </h2>
+                  <Link
+                    className="mt-2 text-sm font-bold text-blue-500  cursor-pointer hover:text-blue-800 dark:hover:text-blue-400"
+                    href="https://calendly.com/amel-addoun"
+                  >
+                    Rencontrons-nous sur Calendly
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="mx-auto max-w-xl  text-center">
-            <p className="mx-auto mb-6 mt-4 max-w-lg text-sm text-muted-foreground lg:mb-8">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-              aliquam,purus sit amet luctus magna fringilla urna
-            </p>
+          <div className="mx-auto max-w-xl w-full md:w-1/2  text-center">
             <form
               onSubmit={handleSubmit}
               className="mx-auto mb-4 max-w-[400px] text-left"
@@ -199,13 +198,13 @@ export function Contact() {
               {Loading ? (
                 <input
                   value="⏳ Envoi en cours..."
-                  className="inline-block w-full cursor-pointer rounded-md bg-primary px-6 py-3 text-center font-semibold text-white"
+                  className="inline-block w-full cursor-pointer rounded-md bg-orangespd px-6 py-3 text-center font-semibold text-white"
                 />
               ) : (
                 <input
                   type="submit"
                   value={"Envoyer"}
-                  className="inline-block w-full cursor-pointer rounded-md bg-primary px-6 py-3 text-center font-semibold text-white"
+                  className="inline-block w-full cursor-pointer rounded-md bg-orangespd px-6 py-3 text-center font-semibold text-white"
                 />
               )}
             </form>

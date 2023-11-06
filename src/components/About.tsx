@@ -66,9 +66,12 @@ export function About() {
       <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-10">
           <div className="flex flex-col gap-8 lg:w-3/5">
-            <h2 className="mb-8 text-2xl font-bold text-primary md:text-5xl">
-              Derrière Spiridise, l'envie de rendre accessible le pouvoir des
-              mots bien choisis 🚀
+            <h2 className="mb-8 text-2xl font-bold  md:text-5xl">
+              « Derrière Spiridise, l'envie de rendre accessible{" "}
+              <span className="text-primary">
+                le pouvoir des mots bien choisis
+              </span>{" "}
+              »
             </h2>
             <p className="text-sm sm:text-base text-muted-foreground p-4">
               Biberonnée au plaisir des belles lettres, j'ai toujours aimé être
