@@ -10,183 +10,36 @@ import Arsen from "../../public/assets/logo-brands/arsen.png";
 import Adeo from "../../public/assets/logo-brands/adeo.png";
 
 export function Collaborations() {
+  const logos = [
+    { src: Shine, alt: "Facebook" },
+    { src: MozaikRH, alt: "Airbnb" },
+    { src: FR, alt: "Apple" },
+    { src: LM, alt: "Spark" },
+    { src: BC, alt: "Samsung" },
+    { src: PC, alt: "Disney" },
+    { src: Arsen, alt: "Quora" },
+    { src: Adeo, alt: "Sass" },
+  ];
+
   return (
-    <div className="h-64 mx-auto relative w-4/5 grid place-items-center z-[-1] overflow-hidden slider">
-      <div className="flex w-[calc(400px_*_12)] slider-track">
-        <div className="flex items-center p-4">
-          <Image src={Adeo} alt="logo adeo" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image
-            src={FR}
-            alt="logo Freelance Republiik"
-            className="h-30 w-28"
-          />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Arsen} alt="logo arsen" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4 ">
-          <Image src={LM} alt="logo leroy merlin" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={BC} alt="logo bluecoders" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={PC} alt="logo petits commerces" className="h-20 w-20" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={MozaikRH} alt="logo mozaikrh" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Shine} alt="logo shine" className="h-30 w-28" />
-        </div>
-
-        <div className="flex items-center p-4">
-          <Image src={Adeo} alt="logo adeo" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image
-            src={FR}
-            alt="logo Freelance Republiik"
-            className="h-30 w-28"
-          />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Arsen} alt="logo arsen" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4 ">
-          <Image src={LM} alt="logo leroy merlin" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={BC} alt="logo bluecoders" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={PC} alt="logo petits commerces" className="h-20 w-20" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={MozaikRH} alt="logo mozaikrh" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Shine} alt="logo shine" className="h-30 w-28" />
-        </div>
-
-        <div className="flex items-center p-4">
-          <Image src={Adeo} alt="logo adeo" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image
-            src={FR}
-            alt="logo Freelance Republiik"
-            className="h-30 w-28"
-          />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Arsen} alt="logo arsen" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4 ">
-          <Image src={LM} alt="logo leroy merlin" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={BC} alt="logo bluecoders" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={PC} alt="logo petits commerces" className="h-20 w-20" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={MozaikRH} alt="logo mozaikrh" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Shine} alt="logo shine" className="h-30 w-28" />
-        </div>
-
-        <div className="flex items-center p-4">
-          <Image src={Adeo} alt="logo adeo" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image
-            src={FR}
-            alt="logo Freelance Republiik"
-            className="h-30 w-28"
-          />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Arsen} alt="logo arsen" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4 ">
-          <Image src={LM} alt="logo leroy merlin" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={BC} alt="logo bluecoders" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={PC} alt="logo petits commerces" className="h-20 w-20" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={MozaikRH} alt="logo mozaikrh" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Shine} alt="logo shine" className="h-30 w-28" />
-        </div>
-
-        <div className="flex items-center p-4">
-          <Image src={Adeo} alt="logo adeo" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image
-            src={FR}
-            alt="logo Freelance Republiik"
-            className="h-30 w-28"
-          />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Arsen} alt="logo arsen" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4 ">
-          <Image src={LM} alt="logo leroy merlin" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={BC} alt="logo bluecoders" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={PC} alt="logo petits commerces" className="h-20 w-20" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={MozaikRH} alt="logo mozaikrh" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Shine} alt="logo shine" className="h-30 w-28" />
-        </div>
-
-        <div className="flex items-center p-4">
-          <Image src={Adeo} alt="logo adeo" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image
-            src={FR}
-            alt="logo Freelance Republiik"
-            className="h-30 w-28"
-          />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Arsen} alt="logo arsen" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4 ">
-          <Image src={LM} alt="logo leroy merlin" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={BC} alt="logo bluecoders" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={PC} alt="logo petits commerces" className="h-20 w-20" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={MozaikRH} alt="logo mozaikrh" className="h-30 w-28" />
-        </div>
-        <div className="flex items-center p-4">
-          <Image src={Shine} alt="logo shine" className="h-30 w-28" />
-        </div>
-      </div>
+    <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] h-64">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+        {logos.map((logo, index) => (
+          <li key={index}>
+            <Image src={logo.src} alt={logo.alt} className="h-30 w-28" />
+          </li>
+        ))}
+      </ul>
+      <ul
+        className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        aria-hidden="true"
+      >
+        {logos.map((logo, index) => (
+          <li key={index}>
+            <Image src={logo.src} alt={logo.alt} className="h-30 w-28" />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
