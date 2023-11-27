@@ -5,6 +5,7 @@ import "./global.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import NavBar from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
   keywords:
     "rédaction web SEO, rédacteur web, optimisation SEO, rédacteur web SEO, conception-rédaction, copywriting, storytelling, ghostwriting, correction, marketing digital, création de contenus, communication digitale",
 };
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
 
 export default function RootLayout({
   children,
@@ -52,6 +59,16 @@ export default function RootLayout({
         />
         <meta name="twitter:image" content="/assets/logo-spiridise.png" />
       </head>
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
+      ></Script>
+      <Script id="ga-script">
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.GOOGLE_ANALYTICS}');`}
+      </Script>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
