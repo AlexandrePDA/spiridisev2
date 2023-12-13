@@ -7,36 +7,41 @@ type Article = {
   date: string;
   timeRead: number;
   link: string;
+  client: string;
 };
 
 export function LastArticles() {
   const listArticle: Article[] = [
     {
-      tag: "Financement",
-      title: "Comment financer les voitures à l'ouverture de son auto-école ?",
+      tag: "Free-lance",
+      title: "Les avantages à être freelance",
       resume:
-        "Tous les voyants sont au vert et vous êtes prêt·e à ouvrir votre propre auto-école ? L'excitation est palpable, mais une question épineuse vous trotte dans la tête : comment financer les voitures à double commande qui composeront votre flotte ? Attachez vos ceintures, nous partons explorer les différentes options qui s’offrent à vous ! ",
-      date: "31 octobre 2023",
-      timeRead: 4,
-      link: "https://www.shine.fr/blog/auto-ecole-financer-locaux-voitures/",
-    },
-    {
-      tag: "Assurance",
-      title: "Tout ce qu’il faut savoir sur les assurances professionnelles",
-      resume:
-        "Les assurances professionnelles donnent souvent du fil à retordre aux entrepreneur·ses. Certaines sont obligatoires, d’autres non, et cela varie en fonction des secteurs d’activité. Il peut parfois être compliqué de choisir les biens et personnes à assurer. Dans ce guide, nous avons réuni tout ce qu’il faut savoir sur les 3 grandes catégories d’assurances professionnelles.",
-      date: "30 octobre 2023",
-      timeRead: 9,
-      link: "https://www.shine.fr/blog/guide-assurances-professionnelles/",
-    },
-    {
-      tag: "Assurance",
-      title: "Le calendrier des échéances fiscales en micro-entreprise",
-      resume:
-        "Comme tous les statuts juridiques, le régime de la micro-entreprise comporte des charges sociales et fiscales. En tant que micro-entrepreneur·se, vous devez respecter les délais de déclaration et de règlement. Si vous dérogez à la règle, vous encourez des sanctions financières. Voici donc vos impératifs et les dates d’échéances fiscales à respecter en tant qu’auto-entrepreneur·se !",
-      date: "12 octobre 2023",
+        "La voie qui mène au statut de freelance peut sembler longue et sinueuse. Synonyme d’instabilité, elle apparaît pour beaucoup comme un saut dans l’inconnu qui effraie. L’idée de quitter le confort du salariat pour l’aventure du freelancing peut générer des inquiétudes quant à la stabilité financière et à l’incertitude d’un avenir professionnel inédit.",
+      date: "11 décembre 2023",
       timeRead: 5,
-      link: "https://www.shine.fr/blog/calendrier-fiscal-micro-entrepreneur/",
+      link: "https://talks.freelancerepublik.com/avantages-freelance/",
+      client: "Freelance Republik",
+    },
+    {
+      tag: "Entreprise",
+      title: "Comment réussir la vente de son entreprise haut la main ?",
+      resume:
+        "Une entreprise, ce n’est pas comme un canapé que l’on vend en 3 clics via Le Bon Coin. Il faut préparer son projet, faire des calculs, choisir le mode de cession adapté et trouver un repreneur. Une fois ces étapes passées, la vente de votre société peut avoir lieu. Qu’il s’agisse de la vente d’une SARL ou d’une SAS, voici les étapes à suivre pour vendre son entreprise étape par étape.",
+      date: "28 novembre 2023",
+      timeRead: 6,
+      link: "https://www.shine.fr/blog/vendre-entreprise/",
+      client: "Shine",
+    },
+    {
+      tag: "Administratif",
+      title:
+        "Livre de recettes pour les auto-entrepreneurs : conseils et modèles pour une gestion efficace",
+      resume:
+        "La gestion comptable représente souvent une difficulté dans le quotidien des auto-entrepreneurs, qui peuvent rapidement se retrouver submergés. Même si ce statut juridique offre une simplicité bienvenue, il n’en reste pas moins une entreprise comportant son lot d’obligations, comme celle de tenir un livre de recettes. Et quand on ne sait pas de quoi il s’agit, c’est la panique.",
+      date: "27 novembre 2023",
+      timeRead: 5,
+      link: "https://talks.freelancerepublik.com/livre-recettes-auto-entrepreneurs/",
+      client: "Freelance Republik",
     },
   ];
 
@@ -71,6 +76,10 @@ export function LastArticles() {
                   </p>
                   <div className="mx-auto flex max-w-lg flex-row items-start">
                     <div className="flex flex-col items-start">
+                      <div className="text-primary my-2">
+                        {/* client article */}
+                        {article.client}
+                      </div>
                       <div className="flex flex-col items-start text-sm text-orangespd lg:flex-row">
                         {/* date article */}
                         {article.date}
